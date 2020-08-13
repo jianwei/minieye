@@ -72,6 +72,19 @@ export default defineConfig({
               path: '/',
               redirect: '/dashboard/analysis',
             },
+            
+            {
+              name: 'rule',
+              path: '/baseinfo',
+              routes: [
+                {
+                  name: 'bus',
+                  path: '/baseinfo/bus',
+                  component: './baseinfo/busManager',
+                }
+              ],
+            },
+
             {
               path: '/dashboard',
               name: 'dashboard',
@@ -258,6 +271,10 @@ export default defineConfig({
                 },
               ],
             },
+
+            
+
+
             {
               name: 'editor',
               icon: 'highlight',

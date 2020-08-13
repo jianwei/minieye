@@ -86,7 +86,7 @@ const BasicLayout = props => {
 
   const { formatMessage } = useIntl();
   // let pathname = location.pathname;
-  console.log("location.pathname:",location.pathname,"props:",props);
+  // console.log("location.pathname:",location.pathname,"props:",props);
   let emenu = ['/dashboard']
   let sWidth = 256;
   for (let i = 0; i < emenu.length; i++) {
