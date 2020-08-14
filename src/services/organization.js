@@ -1,7 +1,9 @@
 import request from '@/utils/request';
+import urlConfig from '../../config/urlConfig';
 
 export async function fakeOrganizationGroup(params) {
-  return request('https://www.fastmock.site/mock/f1c288f0679b39410fbf3161f29a6567/minieye/tree/organization', {
+  let url = urlConfig.host+urlConfig.path.tree_organization;
+  return request(url, {
     method: 'GET',
     data: params,
   });

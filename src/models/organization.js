@@ -20,8 +20,6 @@ const OrganizationModel = {
             return { ...state, group: action.payload };
         },
         selectedReducer(state, action) {
-            console.log("reducer:",state, action);
-            // debugger;
             return { ...state, selected: action.payload };
         },
 
